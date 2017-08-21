@@ -1,6 +1,8 @@
 #background-container {
   background: url(../images/topography.png) no-repeat;
   background-size: 768px 980px;
+  height: 980px;
+  width: 768px;
 }
 
 #crystals img {
@@ -8,3 +10,37 @@
   width: 64px;
   height: 64px;
 }
+
+#game-title {
+  background-color: #99ccff;
+  width: 200px;
+  height: 70px;
+}
+
+#game-title h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+  color: darkcyan;
+  font-size: 25px;
+}
+
+#instructions {
+  background-color: #AE99FF;
+  width: 50%;
+  height: 335;
+}
+
+#instructions p {
+  font-size: 18px;
+  color: darkslategray;
+  font-family:Lucida Sans Unicode;
+  line-height: 20px;
+}
+
+#randomnumber {
+  background-color: #983B3B;
+  width: 200px;
+  height: 75px;
+}
+
