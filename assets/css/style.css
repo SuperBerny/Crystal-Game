@@ -2,3 +2,9 @@
   background: url(../images/topography.png) no-repeat;
   background-size: 768px 980px;
 }
+
+#crystals img {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
