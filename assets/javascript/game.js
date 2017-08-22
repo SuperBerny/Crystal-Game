@@ -13,7 +13,9 @@
       //to restart the game
 //
 
-
+function reset(){
+   
+}
 
 //this variable to the number to be matched
 var targetNumber = 30;
@@ -23,26 +25,44 @@ var counter = 0;
 $("#randomnumber").text(targetNumber);
 
 //this array will be used to generate randoms values for the crystals
-var numberOptions = [1,5,8,12];
-var increment = numberOptions[Math.round(Math.random())];
-
-//this for loop with place the new random values on the crystals
-for (var i =0; i < numberOptions.length; i++){
-
-var crystalValue = $("#btn1, #btn2, Btn3, #btn4");
-
-crystalValue.attr("data-crystalValue", numberOptions[i]);
-
+function numberOptions(min, max) {
+   min = Math.ceil(1);
+   max = Math.floor(12);
+   //The maximum is exclusive and the minimum is inclusive
+   for(var i=0;i < 12 ;i++){
+   var crystalValue =  Math.floor(Math.random() * (max - min)) + min;
+   crystalValue.attr("data-crystalValue", numberOptions(1,12));
+ }
 }
+ 
+ //Calling targetNumber function
+//  numberOptions(1, 12);
+//this for loop with place the new random values on the crystals
+      // for (var i =0; i < numberOptions.length; i++){
+
+      // var crystalValue = $("#btn1, #btn2, #btn3, #btn4");
+
+      // crystalValue.attr("data-crystalValue", numberOptions(1,12));
+
+      // }
 //this on-click event will respond to button clicks of the crystal images
 $("#btn1, #btn2, #btn3, #btn4").on("click",function(){
 
-   var points = ($(this).attr("data-crystalValue"));
+   var points = ($("#btn1, #btn2, #btn3, #btn4").attr("data-crystalValue"));
    points = parseInt(points);
 
 //add points to the "counter" variable which is a global variable
 counter += points;
 alert("You're new score is " + counter);
+
+if (counter === targetNumber) {
+   alert("You Win!");
+}
+
+if (counter >= targetNumber){
+   alert("You Lose!");
+
+}
 })
 
 
