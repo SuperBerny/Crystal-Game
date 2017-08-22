@@ -16,6 +16,7 @@
 function reset(){
    
 }
+var crystalValue = 0;
 
 //this variable to the number to be matched
 var targetNumber = 30;
@@ -30,13 +31,12 @@ function numberOptions(min, max) {
    max = Math.floor(12);
    //The maximum is exclusive and the minimum is inclusive
    for(var i=0;i < 12 ;i++){
-   var crystalValue =  Math.floor(Math.random() * (max - min)) + min;
-   crystalValue.attr("data-crystalValue", numberOptions(1,12));
+   crystalValue =  Math.floor(Math.random() * (max - min)) + min;
  }
 }
  
  //Calling targetNumber function
-//  numberOptions(1, 12);
+ numberOptions(1, 12);
 //this for loop with place the new random values on the crystals
       // for (var i =0; i < numberOptions.length; i++){
 
@@ -48,8 +48,8 @@ function numberOptions(min, max) {
 //this on-click event will respond to button clicks of the crystal images
 $("#btn1, #btn2, #btn3, #btn4").on("click",function(){
 
-   var points = ($("#btn1, #btn2, #btn3, #btn4").attr("data-crystalValue"));
-   points = parseInt(points);
+  var points = ($("#btn1, #btn2, #btn3, #btn4").attr("data-crystalValue"));
+   points = parseInt(points); 
 
 //add points to the "counter" variable which is a global variable
 counter += points;
