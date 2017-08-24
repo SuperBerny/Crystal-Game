@@ -13,15 +13,6 @@
    //to restart the game
 //
 
-// function resetGame(){
-//   var numberOptions = [1,5,8,12];
-//   var increment = numberOptions[Math.round(Math.random())];
-//   return increment;
-// }
-
-// var increment = resetGame();
-// var crystalValue = 0;
-
 $(document).ready(function(){
 //random chooses a random number to be matched at the beginning of the game
 var random= Math.floor(Math.random()*101+19);
@@ -67,7 +58,7 @@ function win(){
 function lose(){
    alert("You Lose!");
    losses++;
-   $("losses").html("Loses: " + losses);
+   $("#losses").html("Losses: " + losses);
 }
 
 //button click jQuery functions
