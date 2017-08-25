@@ -15,7 +15,7 @@
 
 $(document).ready(function(){
 //random chooses a random number to be matched at the beginning of the game
-var random= Math.floor(Math.random()*101+19);
+var random= Math.floor(Math.random()*80+8);
 
 //this grabs puts the value of random into the #randomnumber div
 $("#randomnumber").text(random);
@@ -40,7 +40,7 @@ $("#losses").html("Losses: " + losses);
 
 function reset(){
    random = Math.floor(Math.random()* 101 + 19);
-   $("#randomnumber").text(random);
+   $("#randomnumber").html(random);
    var num1 = Math.floor(Math.random() * 11 + 1);
    var num2 =  Math.floor(Math.random() * 11 + 1);
    var num3 =  Math.floor(Math.random() * 11 + 1);

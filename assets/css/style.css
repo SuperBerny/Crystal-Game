@@ -10,10 +10,17 @@ body {
   width: 680px;
 }
 
+#crystals {
+  margin: auto;
+  padding: 4px;
+  text-align: center;
+}
+
 #crystals img {
   display: inline-block;
   width: 64px;
   height: 64px;
+  padding: 4px;
 }
 
 #game-title {
@@ -27,14 +34,14 @@ body {
   text-align: center;
   margin: auto;
   padding-top: 25px;
-  color:white;
+  color:#ead5fe;
   font-size: 22px;
   font-family: 'Architects Daughter', cursive;
 }
 
 #instructions {
   width: 80%;
-  height: auto;
+  height: 174px;
   margin: auto;
 }
 
@@ -45,15 +52,28 @@ body {
   line-height: 20px;
 }
 
-#randomnumber {
-  background-color: #983B3B;
-  width: 200px;
+#random {
+  
+  border: 2px solid #ead5fe;
+  border-radius: 25px;
+  width: 150px;
   height: 75px;
+  margin: auto;  
+}
+
+#randomnumber {
+  color: #ead5fe;
+  padding-top: 15px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 48px;
 }
 
 #wrapper {
   width: 75%;
   height: 100px;
+  bottom: 0px;
 }
 
 #scores{
