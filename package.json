@@ -1,0 +1,20 @@
+{
+  "name": "week-4-game",
+  "version": "1.0.0",
+  "description": "Crystal game made with HTML, CSS, and jQuery",
+  "main": "jquery-3.2.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperBerny/week-4-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperBerny/week-4-game/issues"
+  },
+  "homepage": "https://github.com/SuperBerny/week-4-game#readme"
+}
